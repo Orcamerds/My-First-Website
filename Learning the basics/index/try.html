@@ -10,22 +10,31 @@
     <a href="#Header">Header</a>
     <a href="#About">About</a>
     <a href="#Skills">Skills</a>
+    <a href="#Progress">Progress</a>
     <a href="#Routine">Routine</a>
     <a href="#Contact">Contact</a>
+    <a href="#Footer">Footer</a>
+    
 </nav>
 
 
     <!-- Header Section -->
     <section id="Header">
+    <figure>
+ 
         <h1>For the Future</h1>
-    <a href="profie.jpg" target="_blank">
-    <img src="profie.jpg" alt="pogi" width="200">
-</a>
+        <a href="profie.jpg" target="_blank">
+        <img src="profie.jpg" alt="pogi" width="200">
+        </a>
+
+    <figcaption>Pogi.</figcaption>
+
+    </figure>
         <p>As I embark on my journey to become a web developer, I am excited about the endless possibilities that lie ahead. The world of coding is vast and ever-evolving, and I am eager to learn and grow in this field. With dedication and perseverance, I am confident that I will be able to create amazing websites and applications that can make a positive impact on people's lives. The future is bright, and I am ready to embrace it with open arms.</p>
     </section>
 
     <hr>
-
+<main>
     <!-- About Section -->
     <section id="About">
         <h2>About Me</h2>
@@ -38,9 +47,21 @@
     <section id="Skills">
         <h2>My Skills</h2>
         <ul>
-            <li>HTML (Beginner)</li>
-            <li>CSS (Currently Learning)</li>
-            <li>JavaScript (Have idea but still learning)</li>
+            <li>
+            HTML (Beginner)
+            <progress value="50" max="100"></progress>
+                <ul>
+                    <li>Forms</li>
+                    <li>Semantic HTML</li>
+                    <li>Tables</li>
+                </ul>
+
+            </li>
+
+        <li>CSS (Currently Learning)</li>
+            <progress value="30" max="100"></progress>
+        <li>JavaScript (Have idea but still learning)</li>
+            <progress value="20" max="100"></progress>
         </ul>
     </section>
 
@@ -55,12 +76,12 @@
             <th>Progress</th>
             <th>Level</th>
             <th>Confidence</th>
-            <th>Target Date</th>
+            <th>Date</th>
         </tr>
         <tr>
             <td>HTML</td>
             <td>50%</td>
-            <td>Beginner</td>
+            <td>Average</td>
             <td>Medium</td>
             <td>2026-03-05</td>
         </tr>
@@ -124,21 +145,112 @@
         </table>
     </section>
 
+    <hr>
+
+    <!-- Journey Section -->
+    <section id="Journey">
+
+    <details>
+        <summary>My Coding Journey</summary>
+
+    <h2>Coding Journey</h2>
+
+        <article>
+
+        <h3>My First Time Learning HTML</h3>
+
+        <p>
+        When I first started learning HTML, everything felt confusing.
+        Tags like div, section, and nav looked strange to me.
+        But after practicing every day and writing code from memory,
+        I slowly started understanding how websites are structured.
+        </p>
+
+        <p>
+        Now I can build simple pages using semantic HTML like
+        nav, main, section, article, and footer.
+        </p>
+
+        </article>
+
+
+        <aside>
+
+        <h4>Tip for Beginners</h4>
+
+        <p>
+        Try writing HTML without looking at tutorials.
+        Build small pages from memory and then check your mistakes.
+        This helps you learn much faster.
+        </p>
+
+        </aside>
+
+    </details>
+
+    </section>
+
     <hr>   
 
     <!-- Contact Section -->
      <section id="Contact">
         <h2>Contact</h2>
-        <p>Mbaylon74@gmail.com:</p>
+        <p>&#9993; Mbaylon74@gmail.com:</p>
+        <P>&phone; 09217200712</P>
         <p>GitHub: <a href="https://github.com/Orcamerds" target="_blank">My Profile</a></p>
+
+        <h3>Send Me a Message</h3>
+
+        <form>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+            <button type="submit" onclick="alert('Thank you for your support')">Send me a message</button>
+
+        </form>
+
     </section>
+
+    <!-- Learning Resources Section-->
+     <section id="LearningResources">
+        <h2>Learning Resources</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        </ul>
+    <hr>
+
+    <!-- Goals Section -->
+     <section id="Goals">
+            <h2>My Goals</h2>
+            <article>
+            <ol>
+                <li>Master HTML and CSS</li>
+                <li>Learn JavaScript and build interactive websites</li>
+                <li>Contribute to open source projects on GitHub</li>
+                <li>Build a portfolio of projects to showcase my skills</li>
+                <li>Get a job as a web developer and keep learning every day</li>
+            </ol>
+            </article>
+     </section>
+    </main>
 
     <hr>
 
     <!-- Footer  Section-->
-   <div>
+    <footer id="Footer">
         <p>&copy; This is purely build with HTML and will be later improved so please bear with me</p>
-   </div>
+    </footer>
 
    
 
